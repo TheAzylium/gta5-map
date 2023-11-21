@@ -22,5 +22,5 @@ RUN pnpm build
 
 
 FROM nginx:latest
-COPY --from=build /app/dist/gta5map /usr/share/nginx/html
+COPY --from=build /app/dist/gta5map/browser /usr/share/nginx/html
 EXPOSE 80
