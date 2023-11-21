@@ -6,7 +6,6 @@ import {
   icon,
   Icon,
   latLng,
-  Layer,
   LayerGroup,
   LeafletEvent,
   Map,
