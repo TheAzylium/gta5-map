@@ -23,4 +23,5 @@ RUN pnpm build
 
 FROM nginx:latest
 COPY --from=build /app/dist/gta5map/browser /usr/share/nginx/html
+COPY default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
